@@ -1,0 +1,25 @@
+name: 'pre-release'
+
+on:
+  push:
+    branches: master
+
+jobs:
+  build:
+    name: pre-release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: build
+        run: |
+          go build
+
+      - name: pre-release
+        uses: softprops/action-gh-release@v1
+        with:
+          prerelease: true
+          files: |
+            go-echo-example
