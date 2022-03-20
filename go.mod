@@ -3,7 +3,7 @@ module github.com/yanorei32/go-echo-example
 go 1.17
 
 require (
-	github.com/labstack/echo/v4 v4.7.1
+	github.com/labstack/echo/v4 v4.7.2
 	github.com/stretchr/testify v1.7.1
 )
 
