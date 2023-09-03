@@ -5,7 +5,7 @@ COPY . /root/build
 
 RUN cd /root/build && CGO_ENABLED=0 go build
 
-FROM alpine:3.18.3@sha256:c5c5fda71656f28e49ac9c5416b3643eaa6a108a8093151d6d1afc9463be8e33
+FROM alpine:3.18.3@sha256:7144f7bab3d4c2648d7e59409f15ec52a18006a128c733fcff20d3a4a54ba44a
 COPY --from=build-env \
 	/root/build/go-echo-example \
 	/usr/bin/go-echo-example
