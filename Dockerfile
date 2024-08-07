@@ -1,4 +1,4 @@
-FROM golang:1.22.4 AS build-env
+FROM golang:1.22.6 AS build-env
 MAINTAINER yanorei32
 
 COPY . /root/build
