@@ -21,7 +21,7 @@ jobs:
           go build
 
       - name: pre-release
-        uses: softprops/action-gh-release@v2.0.5
+        uses: softprops/action-gh-release@v2.2.1
         with:
           tag_name: master
           prerelease: true
@@ -30,7 +30,7 @@ jobs:
             go-echo-example
 
       - name: tagged-release
-        uses: softprops/action-gh-release@v2.0.5
+        uses: softprops/action-gh-release@v2.2.1
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
