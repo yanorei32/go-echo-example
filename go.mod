@@ -2,7 +2,7 @@ module github.com/yanorei32/go-echo-example
 
 go 1.23.0
 
-toolchain go1.25.1
+toolchain go1.25.2
 
 require (
 	github.com/labstack/echo/v4 v4.13.4
